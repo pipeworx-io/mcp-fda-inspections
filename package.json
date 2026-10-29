@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-fda-inspections",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "FDA inspection outcomes, Form 483 observations, compliance actions and import refusals for drug, device and food establishments worldwide, from the FDA Data Dashboard (OII/ORA).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-fda-inspections": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "fda-inspections"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-fda-inspections.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/fda-inspections",
   "pipeworx": {
-    "sourceHash": "v1-481caf3fac535fea9d6796c249306212bbd66cbd9785ea9108a4dac646b398e9",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "mode": "gateway",
+    "slug": "fda-inspections",
+    "gatewaySlug": "fda-inspections",
+    "sourceHash": "v1-92b6bef3973fde0565957a16787c4d445c058f34d812bebdc3a849c65ecf1a0c",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
