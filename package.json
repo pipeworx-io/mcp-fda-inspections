@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-fda-inspections",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "FDA inspection outcomes, Form 483 observations, compliance actions and import refusals for drug, device and food establishments worldwide, from the FDA Data Dashboard (OII/ORA).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "fda-inspections",
     "gatewaySlug": "fda-inspections",
-    "sourceHash": "v1-92b6bef3973fde0565957a16787c4d445c058f34d812bebdc3a849c65ecf1a0c",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-25a5147fe61a4bf66c69e1e300fcf4710450250c9d68e9a3942a8fcce824c418",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
